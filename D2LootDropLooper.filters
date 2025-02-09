@@ -15,39 +15,39 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="socketio.h">
+    <ClInclude Include="src/socketio.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="logging.h">
+    <ClInclude Include="src/logging.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="boundedBuffer.h">
+    <ClInclude Include="src/boundedBuffer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D2GameFunctions.h">
+    <ClInclude Include="src/D2GameFunctions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ShortTermMemoryAllocator.h">
+    <ClInclude Include="src/ShortTermMemoryAllocator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="dllmain.cpp">
+    <ClCompile Include="src/dllmain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="socketio.cpp">
+    <ClCompile Include="src/socketio.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="logging.cpp">
+    <ClCompile Include="src/logging.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="boundedBuffer.cpp">
+    <ClCompile Include="src/boundedBuffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ShortTermMemoryAllocator.cpp">
+    <ClCompile Include="src/ShortTermMemoryAllocator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D2GameFunctions.cpp">
+    <ClCompile Include="src/D2GameFunctions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

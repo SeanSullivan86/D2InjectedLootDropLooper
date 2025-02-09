@@ -116,9 +116,9 @@ BYTE itemD2SBase64[800];
 
 
 
-byte* sgptDataTable = (byte*)0x744304;
-byte* pItemTypesTxtTable = (byte*)((*((uint32_t*)sgptDataTable)) + 3064);
-byte* itemTypesTxtTable = (byte*)(*((uint32_t*)pItemTypesTxtTable));
+byte* sgptDataTable;
+byte* pItemTypesTxtTable;
+byte* itemTypesTxtTable;
 
 
 
@@ -648,6 +648,10 @@ PatchHook Patches[] = {
 
 
 void init() {
+
+    sgptDataTable = (byte*)0x744304;
+    pItemTypesTxtTable = (byte*)((*((uint32_t*)sgptDataTable)) + 3064);
+    itemTypesTxtTable = (byte*)(*((uint32_t*)pItemTypesTxtTable));
     
     Logging_init("C:\\Users\\sully\\d2log_log.txt");
 
@@ -711,8 +715,8 @@ void cleanup() {
 
 
 bool __stdcall DllMain(HMODULE /*module*/, DWORD reason, LPVOID /*reserved*/) {
-    if (reason == DLL_PROCESS_ATTACH) init();
-    if (reason == DLL_PROCESS_DETACH) cleanup();
+    //if (reason == DLL_PROCESS_ATTACH) init();
+    //if (reason == DLL_PROCESS_DETACH) cleanup();
     return true;
 }
 

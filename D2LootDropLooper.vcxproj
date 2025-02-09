@@ -86,19 +86,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="boundedBuffer.h" />
-    <ClInclude Include="D2GameFunctions.h" />
-    <ClInclude Include="logging.h" />
-    <ClInclude Include="ShortTermMemoryAllocator.h" />
-    <ClInclude Include="socketio.h" />
+    <ClInclude Include="src/boundedBuffer.h" />
+    <ClInclude Include="src/D2GameFunctions.h" />
+    <ClInclude Include="src/logging.h" />
+    <ClInclude Include="src/ShortTermMemoryAllocator.h" />
+    <ClInclude Include="src/socketio.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="boundedBuffer.cpp" />
-    <ClCompile Include="D2GameFunctions.cpp" />
-    <ClCompile Include="dllmain.cpp" />
-    <ClCompile Include="logging.cpp" />
-    <ClCompile Include="ShortTermMemoryAllocator.cpp" />
-    <ClCompile Include="socketio.cpp" />
+    <ClCompile Include="src/boundedBuffer.cpp" />
+    <ClCompile Include="src/D2GameFunctions.cpp" />
+    <ClCompile Include="src/dllmain.cpp" />
+    <ClCompile Include="src/logging.cpp" />
+    <ClCompile Include="src/ShortTermMemoryAllocator.cpp" />
+    <ClCompile Include="src/socketio.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
