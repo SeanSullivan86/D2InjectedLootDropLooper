@@ -1,0 +1,3 @@
+LIBRARY D2LOOTDROPLOOPER
+EXPORTS
+InitLootDropLooper=InitLootDropLooper

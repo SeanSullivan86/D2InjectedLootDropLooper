@@ -645,10 +645,19 @@ PatchHook Patches[] = {
         // { GetDllOffset("D2Client.dll", 0x1A6830), (DWORD) handleMonsterKill, 5}
 };
 
+struct InitLootDropLooperParams {
+    uint32_t portNumber;
+    char logFile[100];
+};
+
+DWORD WINAPI InitLootDropLooper(LPVOID params) {
+    InitLootDropLooperParams* pParams = (InitLootDropLooperParams*)params;
+
+    Logging_init(pParams->logFile);
+    logPrintf("Initializing... will output to port %i\n", pParams->portNumber);
 
 
-void init() {
-
+    /*
     sgptDataTable = (byte*)0x744304;
     pItemTypesTxtTable = (byte*)((*((uint32_t*)sgptDataTable)) + 3064);
     itemTypesTxtTable = (byte*)(*((uint32_t*)pItemTypesTxtTable));
@@ -689,7 +698,7 @@ void init() {
     D2GameFunctions_init();
 
     AddressOf_UpdateItemCollision = (void*)GetDllOffset("D2Client.dll", 0x24CB26);
-    AddressOf_UpdateUniquesFoundInGame = (void*)GetDllOffset("D2Client.dll", 0x1565B6);
+    AddressOf_UpdateUniquesFoundInGame = (void*)GetDllOffset("D2Client.dll", 0x1565B6); */
 
     /*
     wrapFunction(
@@ -705,7 +714,7 @@ void init() {
             6);
 
 */
-
+    return 0;
 }
 
 void cleanup() {

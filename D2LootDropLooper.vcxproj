@@ -83,6 +83,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
+      <ModuleDefinitionFile>dllModule.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -99,6 +100,9 @@
     <ClCompile Include="src/logging.cpp" />
     <ClCompile Include="src/ShortTermMemoryAllocator.cpp" />
     <ClCompile Include="src/socketio.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dllModule.def" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
